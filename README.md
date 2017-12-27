@@ -22,13 +22,28 @@ Upon use of the main class's (CardIdentifier) inspectText function we get the fo
 
 ## How to Use
 1. Include the library either by any of the following methods:
-    * Composer dependency
+    * **Composer dependency**
+    
+        You can include the library as a composer dependency and then use it as follows:
+         
+        ```php     
+            use Neblar\DesCardId\CardIdentifier;
+	        ...
+	        $identifier = new CardIdentifier(85);
+	        $renderText = $identifier->inspectTextWithNotices($testText);
+            }
         ```
-            
-        ```
-    * Manual includes
-        ```
-
+    * **Manual includes**
+    
+        If your project does not make use of composer you can manually include the folder `src` and the file `DesCardId.php` in your project and use the library as follows: 
+        
+        ```php     
+            use Neblar\DesCardId\CardIdentifier;
+	        require_once('assets/php/DesCardId.php');
+	        ...
+	        $identifier = new CardIdentifier(85);
+	        $renderText = $identifier->inspectTextWithNotices($testText);
+            }
         ``` 
 2. Initialize an object of the `CardIdentifier` class as
 
