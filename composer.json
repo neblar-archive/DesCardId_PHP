@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "library",
   "keywords": ["neblar", "descardid", "credit card", "credit card number", "identification"],
-  "copyright": "Neblar Technologies",
+  "homepage": "https://github.com/neblar/DesCardId_PHP",
   "license": "MIT",
   "authors": [
     {
